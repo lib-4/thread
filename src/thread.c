@@ -1,7 +1,5 @@
 #include "-4_thread.h"
 
-#include <stdlib.h>
-
 #include "-0_utils.h"
 
 #include "internal.h"
