@@ -11,7 +11,12 @@ set(SOURCES
 add_library(G_4_thread STATIC ${SOURCES})
 set_target_properties(G_4_thread PROPERTIES
   OUTPUT_NAME "-4_thread"
+  C_STANDARD 11
 )
+
+if (MSVC)
+  set_target_properties(G_4_thread PROPERTIES COMPILE_FLAGS "/experimental:c11atomics")
+endif()
 
 target_include_directories(G_4_thread
   PUBLIC
