@@ -1,5 +1,6 @@
 #include "-4_thread.h"
 
+#include <errno.h>
 #include <stdbool.h>
 #include <stdlib.h>
 
